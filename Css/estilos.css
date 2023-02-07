@@ -1,0 +1,155 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(224, 206, 41, 0.644);
+}
+
+.logo {
+  width: 5vw;
+  border: solid 2px black;
+  position: relative;
+  margin-left: 60px;
+  border-radius: 50%;
+}
+
+.buscador {
+  background-color: aqua;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  font-size: 170%;
+  margin-right: 20px;
+  margin-top: 20px;
+  /*  comentarios */
+}
+
+.buscador__botones {
+  width: 150%;
+  border: solid 2px black;
+  padding: 10px;
+}
+
+.nav {
+  background-color: rgba(225, 187, 240, 0.288);
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+/**********************nav**************************/
+.margintop {
+  margin-top: 150px;
+}
+
+.margintop_2 {
+  margin-top: 300px;
+}
+
+@media (max-width: 700px) {
+  .logo {
+    width: 80px;
+  }
+  .carousel {
+    display: none;
+  }
+  .cuaco {
+    font-size: 10px;
+  }
+  #seccion-1 {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+  }
+  .stretched-link {
+    display: none;
+  }
+  .youtube {
+    display: none;
+  }
+}
+.footer {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cuaco {
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+}
+
+.margintop3 {
+  margin-top: 100px;
+}
+
+.expandir {
+  object-fit: cover;
+  object-position: center;
+  transition: width 0.5s, height 0.5s;
+}
+
+.expandir:hover {
+  cursor: pointer;
+  transform: scale(1.35);
+  transition: 0.6s ease-out;
+}
+
+@media (max-width: 700px) {
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    align-items: center;
+  }
+  .expandir:hover {
+    transform: none;
+  }
+}
+.titulo {
+  text-align: center;
+}
+
+.imagenfondo {
+  background-size: 100vw;
+  background-repeat: repeat-y;
+  min-height: 135vw;
+}
+
+.flechita {
+  width: 80px;
+  margin-top: 50px;
+  margin-left: 500px;
+}
+
+.width_pequeño {
+  width: 50px;
+}
+
+@media (max-width: 700px) {
+  .tours {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  .miembros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
